@@ -542,10 +542,82 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#setup" class="md-nav__link">
+  <a href="#cosmetic-permissions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Setup
+        Cosmetic Permissions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cosmetic Permissions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#global-cosmetic-permission" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Global Cosmetic Permission
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#category-wildcards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Category Wildcards
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cosmetic-ids" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cosmetic IDs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Examples
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#luckperms-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LuckPerms Examples
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notes
       
     </span>
   </a>
@@ -1046,10 +1118,82 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#setup" class="md-nav__link">
+  <a href="#cosmetic-permissions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Setup
+        Cosmetic Permissions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cosmetic Permissions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#global-cosmetic-permission" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Global Cosmetic Permission
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#category-wildcards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Category Wildcards
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cosmetic-ids" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cosmetic IDs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Examples
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#luckperms-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LuckPerms Examples
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notes
       
     </span>
   </a>
@@ -1074,12 +1218,247 @@
 
 
 <h1 id="permissions">Permissions<a class="headerlink" href="#permissions" title="Permanent link">&para;</a></h1>
+<p>This page lists the permission nodes used by RelicSeasons.</p>
+<p>Use your permissions plugin, such as LuckPerms, to assign these nodes to players, groups, or staff roles.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Only grant admin permissions to trusted staff. Some admin commands can modify player relics, energy, fragments, weekly curses, ritual state, or plugin configuration.</p>
+</div>
 <h2 id="player-permissions">Player Permissions<a class="headerlink" href="#player-permissions" title="Permanent link">&para;</a></h2>
-<p>Player permissions control access to general RelicSeasons features.</p>
+<p>These permissions are intended for normal players or ranked groups.</p>
+<table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>relicseasons.command.relic</code></td>
+<td>Allows players to use <code>/relic</code> and <code>/relics</code>.</td>
+</tr>
+<tr>
+<td><code>relicseasons.weekly_curses.vote</code></td>
+<td>Allows players to vote in the Weekly Curse system.</td>
+</tr>
+<tr>
+<td><code>relicseasons.weekly_curses.vote.weight.5</code></td>
+<td>Gives the player a vote weight of 5 when voting for Weekly Curses.</td>
+</tr>
+<tr>
+<td><code>relicseasons.weekly_curses.vote.weight.10</code></td>
+<td>Gives the player a vote weight of 10 when voting for Weekly Curses.</td>
+</tr>
+<tr>
+<td><code>relicseasons.fragments.use</code></td>
+<td>Allows players to use Secondary Fragment features.</td>
+</tr>
+<tr>
+<td><code>relicseasons.fragments.slots.2</code></td>
+<td>Allows players to use two active Secondary Fragment slots, if enabled by configuration.</td>
+</tr>
+<tr>
+<td><code>relicseasons.fragments.duration.48h</code></td>
+<td>Gives players access to the 48-hour Secondary Fragment duration, if enabled by configuration.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="admin-permissions">Admin Permissions<a class="headerlink" href="#admin-permissions" title="Permanent link">&para;</a></h2>
-<p>Admin permissions should only be granted to trusted staff.</p>
-<h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h2>
-<p>Use your permissions plugin to assign the nodes required by your server setup.</p>
+<p>The main admin permission is:</p>
+<div class="highlight"><pre><span></span><code>relicseasons.admin
+</code></pre></div>
+<p>RelicSeasons checks <code>relicseasons.admin</code> before processing <code>/relicseasons</code> or <code>/rs</code> subcommands. Specific admin permissions are checked afterwards, but they are not enough by themselves without <code>relicseasons.admin</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>relicseasons.admin</code></td>
+<td>Main staff permission for RelicSeasons admin commands and admin access.</td>
+</tr>
+<tr>
+<td><code>relicseasons.admin.reload</code></td>
+<td>Allows reloading RelicSeasons.</td>
+</tr>
+<tr>
+<td><code>relicseasons.admin.debug</code></td>
+<td>Allows debug-related admin commands.</td>
+</tr>
+<tr>
+<td><code>relicseasons.admin.core</code></td>
+<td>Allows relic core repair or restore admin actions.</td>
+</tr>
+<tr>
+<td><code>relicseasons.admin.energy</code></td>
+<td>Allows current and natural energy admin actions.</td>
+</tr>
+<tr>
+<td><code>relicseasons.admin.level</code></td>
+<td>Allows relic level admin actions.</td>
+</tr>
+<tr>
+<td><code>relicseasons.admin.relic</code></td>
+<td>Allows changing a player's relic.</td>
+</tr>
+<tr>
+<td><code>relicseasons.admin.selection</code></td>
+<td>Allows first relic selection admin actions.</td>
+</tr>
+<tr>
+<td><code>relicseasons.admin.activator</code></td>
+<td>Allows Menu Activator debug or repair admin actions.</td>
+</tr>
+<tr>
+<td><code>relicseasons.admin.altar</code></td>
+<td>Allows Relic Altar admin actions.</td>
+</tr>
+<tr>
+<td><code>relicseasons.admin.altar.break</code></td>
+<td>Allows protected Relic Altar break interactions, depending on configuration.</td>
+</tr>
+<tr>
+<td><code>relicseasons.admin.ritual</code></td>
+<td>Allows ritual-related admin actions.</td>
+</tr>
+<tr>
+<td><code>relicseasons.admin.curse</code></td>
+<td>Allows Weekly Curse admin actions.</td>
+</tr>
+<tr>
+<td><code>relicseasons.fragments.admin</code></td>
+<td>Allows Secondary Fragment admin actions.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The admin item in the main menu uses <code>items.admin.permission</code> from <code>menus/main.yml</code>. If that value is not configured, it falls back to <code>relicseasons.admin</code>.</p>
+</div>
+<h2 id="cosmetic-permissions">Cosmetic Permissions<a class="headerlink" href="#cosmetic-permissions" title="Permanent link">&para;</a></h2>
+<p>Cosmetics are unlocked by permission. Granting a cosmetic permission makes it available to the player, but it does not force-enable it. Players still select cosmetics manually from the cosmetics menu.</p>
+<h3 id="global-cosmetic-permission">Global Cosmetic Permission<a class="headerlink" href="#global-cosmetic-permission" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>relicseasons.cosmetics.*</code></td>
+<td>Unlocks all cosmetic categories and cosmetics.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="category-wildcards">Category Wildcards<a class="headerlink" href="#category-wildcards" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>relicseasons.cosmetics.kill_message.*</code></td>
+<td>Unlocks all player kill messages.</td>
+</tr>
+<tr>
+<td><code>relicseasons.cosmetics.mob_death_message.*</code></td>
+<td>Unlocks all mob death messages.</td>
+</tr>
+<tr>
+<td><code>relicseasons.cosmetics.environment_death_message.*</code></td>
+<td>Unlocks all environment death messages.</td>
+</tr>
+<tr>
+<td><code>relicseasons.cosmetics.projectile_trail.*</code></td>
+<td>Unlocks all projectile trails.</td>
+</tr>
+<tr>
+<td><code>relicseasons.cosmetics.mob_kill_effect.*</code></td>
+<td>Unlocks all mob kill effects.</td>
+</tr>
+<tr>
+<td><code>relicseasons.cosmetics.kill_effect.*</code></td>
+<td>Unlocks all player kill effects.</td>
+</tr>
+<tr>
+<td><code>relicseasons.cosmetics.death_effect.*</code></td>
+<td>Unlocks all death effects.</td>
+</tr>
+<tr>
+<td><code>relicseasons.cosmetics.aura.*</code></td>
+<td>Unlocks all auras.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cosmetic-ids">Cosmetic IDs<a class="headerlink" href="#cosmetic-ids" title="Permanent link">&para;</a></h3>
+<p>Relic-themed cosmetic IDs:</p>
+<div class="highlight"><pre><span></span><code>blood
+flame
+frost
+storm
+shadow
+void
+titan
+druid
+</code></pre></div>
+<p>Additional visual cosmetic IDs:</p>
+<div class="highlight"><pre><span></span><code>hearts
+music
+magic
+end_rod
+crit
+witch
+soul
+firework
+cloud
+ink
+</code></pre></div>
+<p>Additional message cosmetic IDs:</p>
+<div class="highlight"><pre><span></span><code>butcher
+assassin
+hunter
+executioner
+duelist
+reaper
+royal
+toxic
+clean_hit
+humiliation
+</code></pre></div>
+<h3 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>relicseasons.cosmetics.kill_message.blood
+relicseasons.cosmetics.kill_effect.firework
+relicseasons.cosmetics.projectile_trail.end_rod
+relicseasons.cosmetics.aura.shadow
+</code></pre></div>
+<h2 id="luckperms-examples">LuckPerms Examples<a class="headerlink" href="#luckperms-examples" title="Permanent link">&para;</a></h2>
+<p>Give normal players access to the main command:</p>
+<div class="highlight"><pre><span></span><code>/lp group default permission set relicseasons.command.relic true
+</code></pre></div>
+<p>Give a VIP group access to all projectile trails:</p>
+<div class="highlight"><pre><span></span><code>/lp group vip permission set relicseasons.cosmetics.projectile_trail.* true
+</code></pre></div>
+<p>Give a staff group access to RelicSeasons admin commands:</p>
+<div class="highlight"><pre><span></span><code>/lp group admin permission set relicseasons.admin true
+/lp group admin permission set relicseasons.admin.reload true
+/lp group admin permission set relicseasons.admin.debug true
+</code></pre></div>
+<h2 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>/relic</code> and <code>/relics</code> use <code>relicseasons.command.relic</code>.</li>
+<li><code>/relicseasons</code> and <code>/rs</code> require <code>relicseasons.admin</code> before subcommand-specific permissions are checked.</li>
+<li>Cosmetic permissions may be declared by configuration instead of <code>plugin.yml</code>.</li>
+<li>Debug-only or deprecated internal permissions are not listed here as public permissions.</li>
+</ul>
 
 
 
