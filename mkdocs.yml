@@ -1,0 +1,69 @@
+site_name: RelicSeasons
+site_description: Premium relic progression plugin for modern Paper servers.
+site_author: AlexRF02
+site_url: https://alexrf02.github.io/RelicSeasons-Docs/
+
+theme:
+  name: material
+  language: en
+  logo: assets/logo.svg
+  favicon: assets/favicon.svg
+  icon:
+    repo: fontawesome/brands/discord
+
+  palette:
+    - scheme: default
+      primary: white
+      accent: deep purple
+
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.instant
+    - navigation.top
+    - toc.follow
+    - content.code.copy
+
+repo_url: https://discord.gg/TU_DISCORD
+repo_name: Discord
+
+extra:
+  generator: false
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins: []
+
+nav:
+  - 🏠 Welcome: wiki/welcome.md
+  - Getting Started:
+      - Installation: wiki/installation.md
+      - Configuration: wiki/configuration.md
+      - Commands:
+          - General: wiki/commands/general.md
+          - Admin: wiki/commands/admin.md
+      - Permissions: wiki/permissions.md
+      - FAQ: wiki/faq.md
+      - Translations: wiki/translations.md
+  - Features:
+      - Relics: wiki/features/relics.md
+      - Energy System: wiki/features/energy.md
+      - Fragments: wiki/features/fragments.md
+      - Weekly Curses: wiki/features/weekly-curses.md
+      - Rituals: wiki/features/rituals.md
+      - Cosmetics: wiki/features/cosmetics.md
+  - Integrations:
+      - PlaceholderAPI: wiki/integrations/placeholderapi.md
+      - WorldGuard: wiki/integrations/worldguard.md
+  - Download: https://builtbybit.com/resources/relicseasons-core-smp-progression.113633
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
